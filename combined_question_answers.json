@@ -1,0 +1,83 @@
+[
+  {
+    "context": "In 2023, there was 1 enrolment from Philippines in WA for a Bachelor Degree in Creative Arts.",
+    "qas": [
+      {"question": "How many enrolments were there in 2023 for Bachelor Degree in Creative Arts?", "answers": [{"text": "1", "answer_start": 18}]},
+      {"question": "Which nationality had the enrolments in 2023?", "answers": [{"text": "Philippines", "answer_start": 36}]},
+      {"question": "Which state had the enrolments for Creative Arts in 2023?", "answers": [{"text": "WA", "answer_start": 45}]},
+      {"question": "What was the level of study for Creative Arts in 2023?", "answers": [{"text": "Bachelor Degree", "answer_start": 50}]}
+    ]
+  },
+  {
+    "context": "In 2016, there were 2 enrolments from Switzerland in QLD for a Diploma in Management and Commerce.",
+    "qas": [
+      {"question": "How many enrolments were there in 2016 for a Diploma in Management and Commerce?", "answers": [{"text": "2", "answer_start": 19}]},
+      {"question": "Which nationality had the enrolments in 2016?", "answers": [{"text": "Switzerland", "answer_start": 36}]},
+      {"question": "Which state had the enrolments for Management and Commerce in 2016?", "answers": [{"text": "QLD", "answer_start": 46}]},
+      {"question": "What was the level of study for Management and Commerce in 2016?", "answers": [{"text": "Diploma", "answer_start": 51}]}
+    ]
+  },
+  {
+    "context": "In 2022, there was 1 enrolment from Sri Lanka in ACT for a Bachelor Degree in Natural and Physical Sciences.",
+    "qas": [
+      {"question": "How many enrolments were there in 2022 for a Bachelor Degree in Natural and Physical Sciences?", "answers": [{"text": "1", "answer_start": 18}]},
+      {"question": "Which nationality had the enrolments in 2022?", "answers": [{"text": "Sri Lanka", "answer_start": 36}]},
+      {"question": "Which state had the enrolments for Natural and Physical Sciences in 2022?", "answers": [{"text": "ACT", "answer_start": 47}]},
+      {"question": "What was the level of study for Natural and Physical Sciences in 2022?", "answers": [{"text": "Bachelor Degree", "answer_start": 52}]}
+    ]
+  },
+  {
+    "context": "In 2022, there was 1 enrolment from Norway in VIC for a Bachelor Degree in Society and Culture.",
+    "qas": [
+      {"question": "How many enrolments were there in 2022 for a Bachelor Degree in Society and Culture?", "answers": [{"text": "1", "answer_start": 18}]},
+      {"question": "Which nationality had the enrolments in 2022?", "answers": [{"text": "Norway", "answer_start": 36}]},
+      {"question": "Which state had the enrolments for Society and Culture in 2022?", "answers": [{"text": "VIC", "answer_start": 43}]},
+      {"question": "What was the level of study for Society and Culture in 2022?", "answers": [{"text": "Bachelor Degree", "answer_start": 48}]}
+    ]
+  },
+  {
+    "context": "In 2020, there were 0 enrolments from United Kingdom in VIC for a Certificate III in Management and Commerce.",
+    "qas": [
+      {"question": "How many enrolments were there in 2020 for a Certificate III in Management and Commerce?", "answers": [{"text": "0", "answer_start": 19}]},
+      {"question": "Which nationality had the enrolments in 2020?", "answers": [{"text": "United Kingdom", "answer_start": 36}]},
+      {"question": "Which state had the enrolments for Management and Commerce in 2020?", "answers": [{"text": "VIC", "answer_start": 49}]},
+      {"question": "What was the level of study for Management and Commerce in 2020?", "answers": [{"text": "Certificate III", "answer_start": 54}]}
+    ]
+  },
+  {
+    "context": "In 2022, there were 5 enrolments from China in VIC for a Doctoral Degree in Architecture and Building.",
+    "qas": [
+      {"question": "How many enrolments were there in 2022 for a Doctoral Degree in Architecture and Building?", "answers": [{"text": "5", "answer_start": 19}]},
+      {"question": "Which nationality had the enrolments in 2022?", "answers": [{"text": "China", "answer_start": 36}]},
+      {"question": "Which state had the enrolments for Architecture and Building in 2022?", "answers": [{"text": "VIC", "answer_start": 40}]},
+      {"question": "What was the level of study for Architecture and Building in 2022?", "answers": [{"text": "Doctoral Degree", "answer_start": 45}]}
+    ]
+  },
+  {
+    "context": "In 2019, there were 2 enrolments from Philippines in WA for a Certificate IV in Creative Arts.",
+    "qas": [
+      {"question": "How many enrolments were there in 2019 for a Certificate IV in Creative Arts?", "answers": [{"text": "2", "answer_start": 19}]},
+      {"question": "Which nationality had the enrolments in 2019?", "answers": [{"text": "Philippines", "answer_start": 36}]},
+      {"question": "Which state had the enrolments for Creative Arts in 2019?", "answers": [{"text": "WA", "answer_start": 43}]},
+      {"question": "What was the level of study for Creative Arts in 2019?", "answers": [{"text": "Certificate IV", "answer_start": 48}]}
+    ]
+  },
+  {
+    "context": "In 2016, there was 1 enrolment from Malaysia in QLD for a Diploma in Information Technology.",
+    "qas": [
+      {"question": "How many enrolments were there in 2016 for a Diploma in Information Technology?", "answers": [{"text": "1", "answer_start": 18}]},
+      {"question": "Which nationality had the enrolments in 2016?", "answers": [{"text": "Malaysia", "answer_start": 36}]},
+      {"question": "Which state had the enrolments for Information Technology in 2016?", "answers": [{"text": "QLD", "answer_start": 44}]},
+      {"question": "What was the level of study for Information Technology in 2016?", "answers": [{"text": "Diploma", "answer_start": 49}]}
+    ]
+  },
+  {
+    "context": "In 2019, there was 1 enrolment from Zimbabwe in WA for a Masters Degree (Coursework) in Society and Culture.",
+    "qas": [
+      {"question": "How many enrolments were there in 2019 for a Masters Degree in Society and Culture?", "answers": [{"text": "1", "answer_start": 18}]},
+      {"question": "Which nationality had the enrolments in 2019?", "answers": [{"text": "Zimbabwe", "answer_start": 36}]},
+      {"question": "Which state had the enrolments for Society and Culture in 2019?", "answers": [{"text": "WA", "answer_start": 46}]},
+      {"question": "What was the level of study for Society and Culture in 2019?", "answers": [{"text": "Masters Degree (Coursework)", "answer_start": 51}]}
+    ]
+  }
+]
