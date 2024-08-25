@@ -4,7 +4,7 @@ This project is a Streamlit web application that allows users to ask questions a
 
 ## Features
 
-- Load and preprocess student enrolment data from Snowflake.
+- Load and preprocess student enrolment data from Snowflake using a random seed.
 - Manually generate question-answer pairs from 50 rows of data.
 - Fine-tune or use a pre-trained BERT model to answer questions.
 - Display 30 random rows of data and provide answers based on user queries.
@@ -43,11 +43,18 @@ This project is a Streamlit web application that allows users to ask questions a
 
 ## Steps to Prepare Data and Use the App
 
-1. **Manually Fetch 50 Rows from Snowflake**:
-    - Users must manually fetch 50 random rows of student enrolment data from Snowflake using the query provided in the code or any similar query.
-  
+1. **Manually Fetch 50 Rows from Snowflake (Using Seed 42)**:
+    - The app fetches 50 random rows of student enrolment data from Snowflake using the following query with a random seed of 42:
+      ```sql
+      SELECT YEAR, MONTH, REGION, NATIONALITY, LEVEL_OF_STUDY, BROAD_FIELD, STATE, ENROLMENTS 
+      FROM STUDENT_ENROLMENTS_DB.ENROLMENTS_DATA.INTERNATIONAL_STUDENT_ENROLMENTS_V2
+      ORDER BY RANDOM(42)
+      LIMIT 50;
+      ```
+    - You can also manually execute this query in Snowflake to fetch the 50 rows.
+
 2. **Manually Generate Question-Answer Pairs**:
-    - After fetching the 50 rows of data, users must generate question-answer pairs based on that data.
+    - After fetching the 50 rows of data, you need to generate question-answer pairs manually.
     - For example:
       - How many enrolments were there from a specific nationality?
       - Which state had the enrolments?
@@ -55,7 +62,7 @@ This project is a Streamlit web application that allows users to ask questions a
 
 3. **Train or Load the Model**:
     - Once the JSON file is populated with question-answer pairs, you can train the model.
-    - You can choose to retrain the model using the newly generated data or load an existing pre-trained model.
+    - You can choose to retrain the model using the new data or load an existing pre-trained model.
     - If you select **Retrain Model**, the app will fine-tune a BERT model on the question-answer pairs you provided in the JSON.
     - If you select **Use Pre-trained Model**, it will load an existing fine-tuned model if available.
 
@@ -76,7 +83,7 @@ This project is a Streamlit web application that allows users to ask questions a
     ```
 
 2. Follow the steps in the web interface:
-    - Manually fetch 50 rows of data from Snowflake.
+    - Manually fetch 50 rows of data from Snowflake using the provided SQL query with random seed 42.
     - Generate question-answer pairs and paste them into `combined_question_answers.json`.
     - Select whether to use a pre-trained model or retrain the model.
     - Submit your choice and refresh the data.
