@@ -121,7 +121,10 @@ question_column_map = {
     "nationality": "NATIONALITY",
     "state": "STATE",
     "level of study": "LEVEL_OF_STUDY",
-    "broad field": "BROAD_FIELD"
+    "broad field": "BROAD_FIELD",
+    "year": "YEAR",
+    "region": "REGION",
+    "enrolments": "ENROLMENTS"
 }
 
 
@@ -223,7 +226,7 @@ if st.button("Submit"):
             learning_rate=2e-5,
             per_device_train_batch_size=1,
             gradient_accumulation_steps=8,
-            num_train_epochs=1,  # Reduced epochs
+            num_train_epochs=2,  # Reduced epochs
             weight_decay=0.01
         )
 
@@ -279,18 +282,22 @@ user_question = st.text_input("Enter your question:")
 def extract_conditions(question):
     conditions = {}
 
-    # Mapping for columns
-    question_column_map = {
-        "nationality": "NATIONALITY",
-        "state": "STATE",
-        "level of study": "LEVEL_OF_STUDY",
-        "broad field": "BROAD_FIELD"
+    # Define patterns to extract relevant information for each column
+    patterns = {
+        "NATIONALITY": r"\bfrom\b\s+(\w+)",
+        "STATE": r"\bin\b\s+(\w+)",
+        "LEVEL_OF_STUDY": r"\b(?:degree|diploma|certificate|level of study)\b\s*(\w+\s?\w*)",
+        "BROAD_FIELD": r"\bin\b\s*(\w+\s?\w*)\s*(field|broad field)",
+        "YEAR": r"\b(?:in|during)\s*(\d{4})",
+        "REGION": r"\bregion\b\s*(\w+\s?\w*)",
+        "ENROLMENTS": r"(\d+)\s*enrolments"
     }
 
-    # Loop through the possible columns and check if any are mentioned in the question
-    for key, column in question_column_map.items():
-        match = re.search(rf"from (.*?) {key}", question.lower())
+    # Iterate through the patterns to look for matches in the question
+    for column, pattern in patterns.items():
+        match = re.search(pattern, question.lower())
         if match:
+            # Extract the value and assign it to the corresponding column in conditions
             conditions[column] = match.group(1).strip()
 
     return conditions
